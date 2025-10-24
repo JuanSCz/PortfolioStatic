@@ -6,34 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/images/portfolio.png" type="image/png">
     <title>Portafolio JMSC</title>
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js">
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
 <body>
     <header class="header" id="header">
-        <a href="#header" class="logo"><span class="span-logo">P</span>ortafolio <span class="span-logo">W</span>eb</a>
-        <ul class="navlist">
-            <li><a href="#hero-header">Inicio</a></li>
-            <li><a href="#services">Servicios</a></li>
-            <li><a href="#estudios">Formación</a></li>
-            <li><a href="#portfolio">Portafolio</a></li>
-            <li><a href="#contacto" id="active">Contacto</a></li>
-        </ul>
-
-        <div class="bx bx-menu" id="menu-icon">
-
+        <div class="header-inner">
+            <a href="#header" class="logo" aria-label="Ir al inicio"><span class="span-logo">P</span>ortafolio <span
+                    class="span-logo">W</span>eb</a>
+            <nav aria-label="Navegación principal">
+                <ul class="navlist">
+                    <li><a href="#hero-header">Inicio</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#estudios">Formación</a></li>
+                    <li><a href="#portfolio">Portafolio</a></li>
+                    <li><a href="#contacto" class="active" aria-current="page">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="bx bx-menu" id="menu-icon" aria-label="Abrir menú" aria-expanded="false" tabindex="0"
+                role="button"></div>
         </div>
     </header>
 
@@ -48,352 +52,316 @@
             <div class="row align-items-center" id="posicion">
                 <div class="col-md-6">
                     <div class="hero-pic">
-                        <img src="images/imagenPerfil.jpg" alt="Profile Image">
+                        <img src="images/perfil.png" alt="Foto de perfil de Juan Santa Cruz" loading="lazy">
                     </div>
                 </div>
                 <div class="col-md-6">
-
-                    <p class="hero-text-p">Hola, mi nombre es <span class="hero-text-span-nombre">Juan Santa
-                            Cruz</span></p>
-                    <h5 class="hero-text-h5">Soy <span class="hero-text-span-js" id="typed-output"></span></h5>
-                    <p class="hero-text-about">Mis intereses abarcan la geopolítica, la economía, el avance tecnológico
-                        y, por supuesto, la programación. </p>
-
-                    <p class="hero-text-about">En el año 2024, estoy enfocado en destacarme académicamente a través de
-                        la carrera Analista de Sistemas. Además, tengo como meta alcanzar un nivel B2 en inglés para
-                        fortalecer mis habilidades profesionales.</p>
-
-                    <p class="hero-text-about-2"> Soy un programador en constante evolución, caracterizado por ser
-                        autodidacta y autosuficiente.
+                    <div class="hero-intro">
+                        <p class="hero-greeting">Hola, mi nombre es</p>
+                        <h1 class="hero-name">Juan Santa Cruz</h1>
+                        <h2 class="hero-role">Soy <span id="typed-output"></span></h2>
+                    </div>
+                    <p class="hero-text-about">
+                        Analista de Sistemas en formación, con experiencia en desarrollo de software con Java,
+                        tanto en aplicaciones de escritorio como web.
+                        Manejo del framework Spring para la creación de APIs REST, integración con bases de datos
+                        SQL y NoSQL, y aplicación de buenas prácticas de testing y seguridad web.
+                        <br><br>
+                        Además, desarrollo soluciones de telemetría e IoT combinando electrónica y programación
+                        con Arduino y ESP32, trabajando con sensores de luz, movimiento, humedad y temperatura, así como
+                        con
+                        motores y actuadores.
                     </p>
 
+                    <p class="hero-text-about-2">
+                        Desarrollador autónomo, orientado a resultados y en constante evolución.
+                    </p>
                     <div class="btn-group">
                         <a id="buttonCV"
-                            href="https://drive.google.com/file/d/1zTNavqZyQxe2C2t6oCBQlzZaT5I426fl/view?usp=drive_link"
-                            download="CV A.pdf" class="buttonCV active" target="_blank">Descargar CV</a>
+                            href="https://drive.usercontent.google.com/u/0/uc?id=1QGatWm3VE4rnoq5RxZjoN8pendI7tsmi&export=download"
+                            class="buttonCV active" target="_blank" rel="noopener">Descargar CV</a>
                         <a id="buttonContact" href="#contacto" class="buttonContact">Contacto</a>
                     </div>
-
                     <div class="social">
-                        <a href="https://www.facebook.com/juanSC.580" target="_blank"><i
-                                class="fab fa-facebook hero-text-social"></i></a>
-                        <a href="https://www.linkedin.com/in/juan-manuel-santa-cruz/" target="_blank"><i
-                                class="fab fa-linkedin hero-text-social"></i></a>
-                        <a href="https://wa.me/542474440215" target="_blank"><i
+                        <a href="https://www.facebook.com/juanSC.580" target="_blank" rel="noopener"
+                            aria-label="Facebook"><i class="fab fa-facebook hero-text-social"></i></a>
+                        <a href="https://www.linkedin.com/in/juan-manuel-santa-cruz/" target="_blank" rel="noopener"
+                            aria-label="LinkedIn"><i class="fab fa-linkedin hero-text-social"></i></a>
+                        <a href="https://wa.me/542474440215" target="_blank" rel="noopener" aria-label="WhatsApp"><i
                                 class="fab fa-whatsapp hero-text-social"></i></a>
-                        <a href="#contacto"><i class="fas fa-envelope hero-text-social"></i></a>
+                        <a href="#contacto" aria-label="Correo"><i class="fas fa-envelope hero-text-social"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <section class="services" id="services">
-        <div>
-            <h1 class="titulo-skills">Skills</h1>
+    <section class="services" id="services" aria-labelledby="titulo-skills">
+        <div class="titulo-skills-wrapper">
+            <h1 class="titulo-skills" id="titulo-skills">Skills</h1>
         </div>
 
         <div class="services-content">
-            <div class="group-boxes">
-                <div class="box">
-                    <img class="icon" id="icon" src="images/icon.png" alt="">
+            <div class="group-boxes" role="list">
+                <article class="box" role="listitem">
+                    <img class="icon" src="images/icon.png" alt="Icono desarrollo Frontend" loading="lazy">
                     <h2>Cliente</h2>
-                    <p>Experiencia en HTML, CSS, JavaScript y Bootstrap, he creado páginas web y APIs desde cero,
+                    <p>Experiencia en HTML, CSS, Bootstrap, JavaScript y React, he creado páginas web y APIs desde cero,
                         proporcionando una experiencia de usuario dinámica y atractiva.</p>
-                </div>
+                </article>
 
-                <div class="box">
-                    <img class="icon" id="icon" src="images/icon-3.png" alt="">
-                    <h2>Manejo de Información</h2>
-                    <p>Experiencia en SQL y MySQL, desde la creación de bases de datos y tablas hasta la realización de
-                        consultas y subconsultas. Conocimiento de los tipos de datos, relaciones entre tablas y JOINs.
+                <article class="box" role="listitem">
+                    <img class="icon" src="images/icon-3.png" alt="Icono gestión de bases de datos" loading="lazy">
+                    <h2>Bases de Datos</h2>
+                    <p>Experiencia en SQL, MySQL y PostgreSQL, desde la creación de bases de datos y tablas hasta la
+                        realización de
+                        consultas y subconsultas, conocimiento en tipos de datos, llaves primarias/foraneas, relaciones
+                        entre tablas y JOINs.
                     </p>
-                </div>
+                </article>
 
-                <div class="box">
-                    <img class="icon" id="icon" src="images/icon-2.png" alt="">
+                <article class="box" role="listitem">
+                    <img class="icon" src="images/icon-2.png" alt="Icono desarrollo Backend" loading="lazy">
                     <h2>Servidor</h2>
-                    <p>Experiencia en desarrollo backend con Java, Spring Boot, y Spring MVC. Arquitecturas por capas,
-                        operaciones CRUD utilizando JDBC y JPA, seguridad mediante Spring Security, conocimientos en
-                        pruebas
-                        unitarias con JUnit y Mockito, así como en contenerización con Docker.</p>
-                </div>
+                    <p>Experiencia en desarrollo de software, tanto en aplicaciones de escritorio como web. Manejo
+                        Spring para la creación de APIs REST, integración con bases de datos y
+                        aplicación de buenas prácticas de testing y seguridad web.</p>
+                </article>
             </div>
 
-            <div>
-                <h1 class="titulo-stack">Stack</h1>
+            <div class="titulo-stack-wrapper">
+                <h1 class="titulo-stack" id="titulo-stack">Stack</h1>
             </div>
 
-            <div class="group-boxes">
-                <div class="box">
+            <div class="group-boxes" role="list">
+                <article class="box" role="listitem">
                     <h2>Frontend</h2>
-                    <div class="icons-lenguajes">
-                        <div class="img-container">
-                            <div class="img-skills">
-                                <img src="images/icons8-css-48.png" alt="" class="skill-icon">
-                            </div>
-                            <span>CSS</span>
-                        </div>
-                        <div class="img-container">
-                            <div class="img-skills">
-                                <img src="images/icons8-html-48.png" alt="" class="skill-icon">
-                            </div>
+                    <div class="icons-lenguajes" role="list" aria-label="Tecnologías Frontend">
+                        <div class="img-container" role="listitem">
+                            <img src="images/icons8-html-48.png" alt="Logo HTML" class="skill-icon" loading="lazy">
                             <span>HTML</span>
                         </div>
-                        <div class="img-container">
-                            <div class="img-skills">
-                                <img src="images/icons8-javascript-48.png" alt="" class="skill-icon">
-                            </div>
-                            <span>JavaScript</span>
+                        <div class="img-container" role="listitem">
+                            <img src="images/icons8-css-48.png" alt="Logo CSS" class="skill-icon" loading="lazy">
+                            <span>CSS</span>
                         </div>
-
-                        <div class="img-container">
-                            <div class="img-skills">
-                                <img src="images/thymeleaf_logo_icon_249398.png" alt="" class="skill-icon">
-                            </div>
-                            <span id="">Thymeleaf</span>
-                        </div>
-
-                        <div class="img-container">
-                            <div class="img-skills">
-                                <img src="images/icons8-bootstrap-48.png" alt="" class="skill-icon">
-                            </div>
+                        <div class="img-container" role="listitem">
+                            <img src="images/icons8-bootstrap-48.png" alt="Logo Bootstrap" class="skill-icon"
+                                loading="lazy">
                             <span>Bootstrap</span>
                         </div>
-
-                        <div class="img-container">
-                            <div class="img-skills">
-                                <img src="images/Angular.png" alt="" class="skill-icon">
-                            </div>
-                            <span>Angular</span>
+                        <div class="img-container" role="listitem">
+                            <img src="images/icons8-javascript-48.png" alt="Logo JavaScript" class="skill-icon"
+                                loading="lazy">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="img-container" role="listitem">
+                            <img src="images/react.png" alt="Logo React" class="skill-icon" loading="lazy">
+                            <span>React</span>
+                        </div>
+                        <div class="img-container" role="listitem">
+                            <img src="images/thymeleaf_logo_icon_249398.png" alt="Logo Thymeleaf" class="skill-icon"
+                                loading="lazy">
+                            <span>Thymeleaf</span>
                         </div>
                     </div>
-                </div>
+                </article>
 
-                <div class="box">
+                <article class="box" role="listitem">
                     <h2>Datos y Versiones</h2>
-                    <div class="icons-lenguajes">
-                        <div class="img-container">
-                            <div class="img-skills">
-                                <img src="images/icons8-sql-60.png" alt="" class="skill-icon">
-                            </div>
+                    <div class="icons-lenguajes" role="list" aria-label="Tecnologías de Datos y Control de Versiones">
+                        <div class="img-container" role="listitem">
+                            <img src="images/icons8-sql-60.png" alt="Logo SQL" class="skill-icon" loading="lazy">
                             <span>SQL</span>
                         </div>
-
-                        <div class="img-container">
-                            <div class="img-skills">
-                                <img src="images/icons8-mysql-48.png" alt="" class="skill-icon">
-                            </div>
+                        <div class="img-container" role="listitem">
+                            <img src="images/icons8-mysql-48.png" alt="Logo MySQL" class="skill-icon" loading="lazy">
                             <span>MySQL</span>
                         </div>
-
-                        <div class="img-container">
-                            <div class="img-skills">
-                                <img src="images/001-diagram.png" alt="" class="skill-icon">
-                            </div>
-                            <span>EasyUML</span>
+                        <div class="img-container" role="listitem">
+                            <img src="images/postgresql.png" alt="Logo PostgreSQL" class="skill-icon" loading="lazy">
+                            <span>PostgreSQL</span>
                         </div>
-
-                        <div class="img-container">
-                            <div class="img-skills">
-                                <img src="images/postman.ico" alt="" class="skill-icon">
-                            </div>
+                        <div class="img-container" role="listitem">
+                            <img src="images/postman.ico" alt="Logo Postman" class="skill-icon" loading="lazy">
                             <span>Postman</span>
                         </div>
-
-
-                        <div class="img-container">
-                            <div class="img-skills">
-                                <img src="images/icons8-git-48.png" alt="" class="skill-icon">
-                            </div>
+                        <div class="img-container" role="listitem">
+                            <img src="images/icons8-git-48.png" alt="Logo Git" class="skill-icon" loading="lazy">
                             <span>Git</span>
                         </div>
-
-                        <div class="img-container">
-                            <div class="img-skills">
-                                <img src="images/github.png" alt="" class="skill-icon">
-                            </div>
+                        <div class="img-container" role="listitem">
+                            <img src="images/github.png" alt="Logo GitHub" class="skill-icon" loading="lazy">
                             <span>GitHub</span>
                         </div>
                     </div>
-                </div>
+                </article>
 
-                <div class="box">
+                <article class="box" role="listitem">
                     <h2>Backend</h2>
-                    <div class="icons-lenguajes">
-                        <div class="img-container">
-                            <div class="img-skills">
-                                <img src="images/icons8-java-48.png" alt="" class="skill-icon">
-                            </div>
+                    <div class="icons-lenguajes" role="list" aria-label="Tecnologías Backend">
+                        <div class="img-container" role="listitem">
+                            <img src="images/icons8-java-48.png" alt="Logo Java" class="skill-icon" loading="lazy">
                             <span>Java</span>
                         </div>
-
-                        <div class="img-container">
-                            <div class="img-skills">
-                                <img src="images/icons8-spring-boot-30.png" alt="" class="skill-icon">
-                            </div>
+                        <div class="img-container" role="listitem">
+                            <img src="images/icons8-spring-boot-30.png" alt="Logo Spring Boot" class="skill-icon"
+                                loading="lazy">
                             <span>Spring Boot</span>
                         </div>
-
-                        <div class="img-container">
-                            <div class="img-skills">
-                                <img src="images/JUnit.png" alt="" class="skill-icon">
-                            </div>
+                        <div class="img-container" role="listitem">
+                            <img src="images/JUnit.png" alt="Logo JUnit 5" class="skill-icon" loading="lazy">
                             <span>JUnit 5</span>
                         </div>
-
-                        <div class="img-container">
-                            <div class="img-skills">
-                                <img src="images/mockito.png" alt="" class="skill-icon">
-                            </div>
+                        <div class="img-container" role="listitem">
+                            <img src="images/mockito.png" alt="Logo Mockito" class="skill-icon" loading="lazy">
                             <span>Mockito</span>
                         </div>
-
-                        <div class="img-container">
-                            <div class="img-skills">
-                                <img src="images/icons8-docker-a-set-of-coupled-software-as-a-service-48.png" alt=""
-                                    class="skill-icon">
-                            </div>
+                        <div class="img-container" role="listitem">
+                            <img src="images/icons8-docker-a-set-of-coupled-software-as-a-service-48.png"
+                                alt="Logo Docker" class="skill-icon" loading="lazy">
                             <span>Docker</span>
                         </div>
-
-                        <div class="img-container">
-                            <div class="img-skills">
-                                <img src="images/Cucumber.png" alt="" class="skill-icon">
-                            </div>
+                        <div class="img-container" role="listitem">
+                            <img src="images/Cucumber.png" alt="Logo Cucumber" class="skill-icon" loading="lazy">
                             <span>Cucumber</span>
                         </div>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
     </section>
 
     <section class="estudios" id="estudios">
-        <h1 class="heading">Formacion</h1>
+        <h1 class="heading">Formación</h1>
         <div class="container contenedorEstudios" id="cajas">
-            <div class="row">
-                <div class="col-md-3 col-sm-12 col-xs-12">
-                    <div class="card-container">
-                        <div class="card card-estudios" id="card-estudios">
-                            <img src="images/captureORT.png" class="card-img-top" alt="ORT">
-                            <div class="card-body">
-                                <h4 class="card-title">Analista de Sistemas</h4>
-                                <p class="card-text">ORT Argentina es una institución educativa privada, parte de la red
-                                    global ORT Mundial. La carrera de Analista de Sistemas se enfoca en desarrollar
-                                    habilidades técnicas y prácticas en programación, bases de datos, y el análisis y
-                                    diseño de sistemas.</p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item" id="list-group-estudios">Duración Total: <span
-                                        class="span-text-cards">2a </span></li>
-
-                                <li class="list-group-item" id="list-group-estudios">Horas semanales:
-                                    <span class="span-text-cards">16</span>
-                                </li>
-
-                                <li class="list-group-item" id="list-group-estudios">Modalidad del Curso:
-                                    <span class="span-text-cards">En línea</span>
-                                </li>
-
-                                <li class="list-group-item" id="list-group-estudios">Tipo de clase: <span
-                                        class="span-text-cards">Presencial</span></li>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                <div class="col">
+                    <div class="card card-estudios-modern shadow rounded-4 h-100">
+                        <div
+                            class="card-header bg-transparent border-0 d-flex align-items-center justify-content-between p-3">
+                            <span class="badge bg-primary"><i class="fas fa-university me-1"></i>Universidad</span>
+                            <span class="institucion fw-bold ms-2">ORT Argentina</span>
+                        </div>
+                        <img src="images/captureORT.png" class="card-img-top p-3 rounded-4" alt="ORT" loading="lazy">
+                        <div class="card-body pb-2">
+                            <h4 class="card-title mb-2 text-main">Analista de Sistemas</h4>
+                            <p class="card-text small">Formación integral en desarrollo de software, gestión de bases de
+                                datos, arquitectura de sistemas, redes y seguridad.</p>
+                            <hr class="hr-card-estudios">
+                            <ul class="list-unstyled mt-3 mb-0">
+                                <li class="mb-1"><i
+                                        class="fas fa-hourglass-half me-2 text-main"></i><strong>Duración:</strong> 2
+                                    años</li>
+                                <li class="mb-1"><i
+                                        class="fas fa-clock me-2 text-main"></i><strong>Horas/semana:</strong> 16</li>
+                                <li class="mb-1"><i class="fas fa-laptop me-2 text-main"></i><strong>Modalidad:</strong>
+                                    En línea</li>
+                                <li><i class="fas fa-users me-2 text-main"></i><strong>Clase:</strong> Presencial</li>
                             </ul>
                         </div>
-                        <a id="buttonCertificadoUno" href="" class="buttonCertificado">Documentación</a>
+                        <div class="card-footer bg-transparent border-0 text-end pb-3 pe-3">
+                            <a id="buttonCertificadoUno" href=""
+                                class="buttonCertificado btn btn-outline-primary btn-sm d-flex justify-content-center align-items-center"
+                                title="Ver documentación en PDF">Documentación</a>
+                        </div>
                     </div>
                 </div>
-
-                <div class="col-md-3 col-sm-12 col-xs-12">
-                    <div class="card-container" id="card-container-dos">
-                        <div class="card card-estudios" id="card-estudios">
-                            <img src="images/captureArgProgra.png" class="card-img-top" alt="eggs">
-                            <div class="card-body">
-                                <h4 class="card-title">Java Full-Stack</h4>
-                                <p class="card-text">Bootcamp intensivo financiado por el Gobierno Nacional de
-                                    Argentina, enfocado en formar profesionales en programación. Su método combina
-                                    educación virtual y cooperación, conectando a estudiantes de forma global y
-                                    potenciando su inserción laboral.</p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item" id="list-group-estudios">Duración Total: <span
-                                        class="span-text-cards">39sem</span></li>
-
-                                <li class="list-group-item" id="list-group-estudios">Horas Totales del Curso:
-                                    <span class="span-text-cards">585</span>
-                                </li>
-
-                                <li class="list-group-item" id="list-group-estudios">Modalidad del Curso:
-                                    <span class="span-text-cards">En línea</span>
-                                </li>
-
-                                <li class="list-group-item" id="list-group-estudios">Tipo de clase: <span
-                                        class="span-text-cards">Presencial</span></li>
+                <div class="col">
+                    <div class="card card-estudios-modern shadow rounded-4 h-100">
+                        <div
+                            class="card-header bg-transparent border-0 d-flex align-items-center justify-content-between p-3">
+                            <span class="badge bg-success"><i class="fas fa-rocket me-1"></i>Bootcamp</span>
+                            <span class="institucion fw-bold ms-2">Argentina Programa</span>
+                        </div>
+                        <img src="images/captureArgProgra.png" class="card-img-top p-3 rounded-4"
+                            alt="Argentina Programa" loading="lazy">
+                        <div class="card-body pb-2">
+                            <h4 class="card-title mb-2 text-main">Java Full Stack</h4>
+                            <p class="card-text small">Bootcamp nacional intensivo que forma desarrolladores Java Full
+                                Stack mediante proyectos reales, bases de datos y seguridad web.</p>
+                            <hr class="hr-card-estudios">
+                            <ul class="list-unstyled mt-3 mb-0">
+                                <li class="mb-1"><i
+                                        class="fas fa-hourglass-half me-2 text-main"></i><strong>Duración:</strong> 39
+                                    semanas</li>
+                                <li class="mb-1"><i class="fas fa-clock me-2 text-main"></i><strong>Horas
+                                        totales:</strong> 585</li>
+                                <li class="mb-1"><i class="fas fa-laptop me-2 text-main"></i><strong>Modalidad:</strong>
+                                    En línea</li>
+                                <li><i class="fas fa-users me-2 text-main"></i><strong>Clase:</strong> Presencial</li>
                             </ul>
                         </div>
-                        <a id="buttonCertificadoDos" href="" class="buttonCertificado">Certificación</a>
+                        <div class="card-footer bg-transparent border-0 text-end pb-3 pe-3">
+                            <a id="buttonCertificadoDos" href=""
+                                class="buttonCertificado btn btn-outline-primary btn-sm d-flex justify-content-center align-items-center"
+                                title="Ver certificado digital">Certificación</a>
+                        </div>
                     </div>
                 </div>
-
-                <div class="col-md-3 col-sm-12 col-xs-12">
-                    <div class="card-container" id="card-container-uno">
-                        <div class="card card-estudios" id="card-estudios">
-                            <img src="images/captureCaC.png" class="card-img-top" alt="codoAcodo">
-                            <div class="card-body">
-                                <h4 class="card-title">Java Full-Stack</h4>
-                                <p class="card-text">Programa impulsado por el Gobierno de la Ciudad de Buenos Aires,
-                                    enfocado en proporcionar herramientas clave en programación Java que faciliten la
-                                    inserción laboral en el sector tecnológico (IT), fundamentales para mejorar la
-                                    empleabilidad.</p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item" id="list-group-estudios">Duración Total: <span
-                                        class="span-text-cards">20sem</span></li>
-
-                                <li class="list-group-item" id="list-group-estudios">Horas Totales del Curso:
-                                    <span class="span-text-cards">60</span>
-                                </li>
-
-                                <li class="list-group-item" id="list-group-estudios">Modalidad del Curso:
-                                    <span class="span-text-cards">En línea</span>
-                                </li>
-
-                                <li class="list-group-item" id="list-group-estudios">Tipo de clase: <span
-                                        class="span-text-cards">Presencial</span></li>
+                <div class="col">
+                    <div class="card card-estudios-modern shadow rounded-4 h-100">
+                        <div
+                            class="card-header bg-transparent border-0 d-flex align-items-center justify-content-between p-3">
+                            <span class="badge bg-success"><i class="fas fa-rocket me-1"></i>Bootcamp</span>
+                            <span class="institucion fw-bold ms-2">Codo a Codo</span>
+                        </div>
+                        <img src="images/captureCaC.png" class="card-img-top p-3 rounded-4" alt="Codo a Codo"
+                            loading="lazy">
+                        <div class="card-body pb-2">
+                            <h4 class="card-title mb-2 text-main">Java Full Stack</h4>
+                            <p class="card-text small">Programa formativo en Java Full Stack que integra frontend,
+                                backend, frameworks y trabajo colaborativo en proyectos reales.</p>
+                            <hr class="hr-card-estudios">
+                            <ul class="list-unstyled mt-3 mb-0">
+                                <li class="mb-1"><i
+                                        class="fas fa-hourglass-half me-2 text-main"></i><strong>Duración:</strong> 20
+                                    semanas</li>
+                                <li class="mb-1"><i class="fas fa-clock me-2 text-main"></i><strong>Horas
+                                        totales:</strong> 60</li>
+                                <li class="mb-1"><i class="fas fa-laptop me-2 text-main"></i><strong>Modalidad:</strong>
+                                    En línea</li>
+                                <li><i class="fas fa-users me-2 text-main"></i><strong>Clase:</strong> Presencial</li>
                             </ul>
                         </div>
-                        <a id="buttonCertificadoTres" href="" class="buttonCertificado">Certificación</a>
+                        <div class="card-footer bg-transparent border-0 text-end pb-3 pe-3">
+                            <a id="buttonCertificadoTres" href=""
+                                class="buttonCertificado btn btn-outline-primary btn-sm d-flex justify-content-center align-items-center"
+                                title="Ver certificado digital">Certificación</a>
+                        </div>
                     </div>
                 </div>
-
-                <div class="col-md-3 col-sm-12 col-xs-12">
-                    <div class="card-container" id="card-container-tres">
-                        <div class="card card-estudios" id="card-estudios">
-                            <img src="images/captureUdemy.png" class="card-img-top" alt="ORT">
-                            <div class="card-body">
-                                <h4 class="card-title">Java Full-Stack</h4>
-                                <p class="card-text">Curso impartido por Andrés Guzmán en la plataforma Udemy,
-                                    reconocido por su enfoque práctico y contenido actualizado. Ideal para dominar Java
-                                    y tecnologías Full-Stack con el respaldo de un ingeniero con más de 25 años de
-                                    experiencia.</p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item" id="list-group-estudios">Duración Total: <span
-                                        class="span-text-cards">25sem</span></li>
-
-                                <li class="list-group-item" id="list-group-estudios">Horas Totales del Curso:
-                                    <span class="span-text-cards">127</span>
-                                </li>
-
-                                <li class="list-group-item" id="list-group-estudios">Modalidad del Curso:
-                                    <span class="span-text-cards">En línea</span>
-                                </li>
-
-                                <li class="list-group-item" id="list-group-estudios">Tipo de clase: <span
-                                        class="span-text-cards">Asincróna</span></li>
+                <div class="col">
+                    <div class="card card-estudios-modern shadow rounded-4 h-100">
+                        <div
+                            class="card-header bg-transparent border-0 d-flex align-items-center justify-content-between p-3">
+                            <span class="badge bg-warning text-dark"><i class="fas fa-laptop-code me-1"></i>Curso
+                                Online</span>
+                            <span class="institucion fw-bold ms-2">Udemy</span>
+                        </div>
+                        <img src="images/captureUdemy.png" class="card-img-top p-3 rounded-4" alt="Udemy"
+                            loading="lazy">
+                        <div class="card-body pb-2">
+                            <h4 class="card-title mb-2 text-main">Java Full Stack</h4>
+                            <p class="card-text small">Curso avanzado de Java que profundiza en POO, Spring Boot, JPA,
+                                REST y Angular, con proyectos reales.</p>
+                            <hr class="hr-card-estudios">
+                            <ul class="list-unstyled mt-3 mb-0">
+                                <li class="mb-1"><i
+                                        class="fas fa-hourglass-half me-2 text-main"></i><strong>Duración:</strong> 25
+                                    semanas</li>
+                                <li class="mb-1"><i class="fas fa-clock me-2 text-main"></i><strong>Horas
+                                        totales:</strong> 127</li>
+                                <li class="mb-1"><i class="fas fa-laptop me-2 text-main"></i><strong>Modalidad:</strong>
+                                    En línea</li>
+                                <li><i class="fas fa-users me-2 text-main"></i><strong>Clase:</strong> Asincróna</li>
                             </ul>
                         </div>
-                        <a id="buttonCertificadoCuatro" href="" class="buttonCertificado">Certificación</a>
+                        <div class="card-footer bg-transparent border-0 text-end pb-3 pe-3">
+                            <a id="buttonCertificadoCuatro" href=""
+                                class="buttonCertificado btn btn-outline-primary btn-sm d-flex justify-content-center align-items-center"
+                                title="Ver certificado digital">Certificación</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -406,7 +374,7 @@
         <div class="portfolio-container">
 
             <div class="portfolio-box">
-                <img src="/images/CaptureAPPcocacola.png" alt="portafolio">
+                <img src="images/CaptureAPPcocacola.png" alt="portafolio">
                 <div class="portfolio-layer">
                     <h4>Sistema Vacacional</h4>
                     <p>Aplicacion de escritorio desarrollada mediante la biblioteca Swing de Java</p>
@@ -419,9 +387,8 @@
                 </div>
             </div>
 
-
             <div class="portfolio-box">
-                <img src="/images/matchService.png" alt="portafolio">
+                <img src="images/matchService.png" alt="portafolio">
                 <div class="portfolio-layer">
                     <h4>Service-Match</h4>
                     <p>Plataforma cuyo objetivo es conectar a clientes con proveedores de servicios de manera eficiente
@@ -436,7 +403,7 @@
             </div>
 
             <div class="portfolio-box">
-                <img src="/images/source.png" alt="source">
+                <img src="images/source.png" alt="source">
                 <div class="portfolio-layer">
                     <h4>Source Gym</h4>
                     <p>Plataforma para los clientes y propietarios del gimnasio Source Gym que abriran sus puertas en el
@@ -451,7 +418,7 @@
             </div>
 
             <div class="portfolio-box">
-                <img src="/images/capturePortafolio.png" alt="">
+                <img src="images/fotoPerfil.png" alt="">
                 <div class="portfolio-layer">
                     <h4>Portafolio Web</h4>
                     <p>Mi propio portafolio web diseñado para presentar mi información personal, educativa y los
@@ -548,15 +515,16 @@
 
     <footer class="footer-color text-white py-2">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-4">
-                    <p class="m-2 text-center">&copy; Derechos de autor <span class="yo">JMSC</span> 2024</p>
+            <div class="row align-items-center text-center">
+                <div class="col-12 col-md-4 mb-2 mb-md-0">
+                    <p class="copyright-footer m-2">&copy; Derechos de autor <span class="yo">JMSC</span> 2024</p>
                 </div>
-                <div class="col-md-4 text-center">
-                    <a class="d-block m-2 home-link" href="#">Volver al inicio</a>
+                <div class="col-12 col-md-4 mb-2 mb-md-0">
+                    <a class="d-block m-2 home-link mx-auto" href="#"><i class="fas fa-arrow-up me-2"></i>Volver al
+                        inicio</a>
                 </div>
-                <div class="col-md-4 text-center">
-                    <div class="social-icons m-2">
+                <div class="col-12 col-md-4">
+                    <div class="social-icons m-2 d-flex justify-content-center flex-wrap">
                         <a href="https://www.facebook.com/juanSC.580" class="me-3 social-icons" target="_blank"><i
                                 class="fab fa-facebook linkedin hero-text-social-footer"></i></a>
                         <a href="https://www.linkedin.com/in/juan-manuel-santa-cruz/" class="me-3 social-icons "
@@ -570,8 +538,8 @@
             </div>
         </div>
     </footer>
-    <script src="/js/script.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/script.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
 </body>
 
 </html>
