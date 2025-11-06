@@ -49,7 +49,7 @@ menu.addEventListener('keydown', function (e) {
 
 document.addEventListener('DOMContentLoaded', function () {
     const typed = new Typed("#typed-output", {
-        strings: ["Desarrollador Java"],
+        strings: ["Desarrollador de Software Java"],
         typeSpeed: 70,
         backSpeed: 55,
         backDelay: 1500,
