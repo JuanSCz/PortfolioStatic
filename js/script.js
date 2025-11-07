@@ -156,7 +156,7 @@ function crearContenedorFlotante(id, imagenes) {
 
     var salirButton = document.createElement("button");
     salirButton.textContent = 'Salir';
-    salirButton.className = "buttonCertificado";
+    salirButton.className = "buttonCertificadoSalir";
     salirButton.style.margin = "1.2rem auto 0 auto";
     salirButton.addEventListener("click", function () {
         contenedorFlotante.style.display = "none";
