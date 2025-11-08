@@ -4,6 +4,13 @@ body {
     overflow-x: hidden;
 }
 
+body.swal2-shown {
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    padding-right: 0 !important;
+}
+
+
 .footer-color .copyright-footer,
 .footer-color .home-link {
     font-size: 0.82em;
@@ -1609,8 +1616,9 @@ body {
     text-decoration: none;
     font-size: 16px;
 }
-/* Ajustes para móviles con resolución similar a Samsung Galaxy A56 */
-@media (max-width: 430px ) {
+
+@media (max-width: 430px) {
+
     #buttonCV,
     #buttonContact {
         font-size: 13px !important;
@@ -2333,8 +2341,11 @@ footer {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw !important;
+    height: 100vh !important;
+    max-width: 100vw !important;
+    max-height: 100vh !important;
+    overflow-x: hidden !important;
     background-color: var(--bg-color);
     display: flex;
     justify-content: center;

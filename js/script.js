@@ -1,4 +1,32 @@
 document.addEventListener('DOMContentLoaded', function () {
+    var buttonCV = document.getElementById('buttonCV');
+    if (buttonCV) {
+        buttonCV.setAttribute('title', 'Funcionalidad desactivada');
+        buttonCV.style.cursor = 'pointer';
+        buttonCV.addEventListener('click', function (e) {
+            e.preventDefault();
+            Swal.fire({
+                icon: 'info',
+                title: 'Acceso denegado',
+                text: 'Funcionalidad desactivada por el administrador de la página.',
+                background: '#181b22',
+                color: '#eaf6ff',
+                confirmButtonColor: '#007ced',
+                confirmButtonText: 'Cerrar',
+                customClass: {
+                    popup: 'swal2-portfolio',
+                    title: 'swal2-title-portfolio',
+                    confirmButton: 'swal2-confirm-portfolio'
+                },
+                showClass: {
+                    popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                    popup: 'animate__animated animate__fadeOutUp'
+                }
+            });
+        });
+    }
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
     tooltipTriggerList.forEach(function (tooltipTriggerEl) {
         if (window.bootstrap && bootstrap.Tooltip) {
@@ -9,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-const header = document.querySelector("header");
+var header = document.querySelector("header");
 window.addEventListener("scroll", () => {
     header.classList.toggle("sticky", window.scrollY > 70);
 });
