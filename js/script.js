@@ -77,7 +77,7 @@ menu.addEventListener('keydown', function (e) {
 
 document.addEventListener('DOMContentLoaded', function () {
     const typed = new Typed("#typed-output", {
-        strings: ["Desarrollador de Software Java"],
+        strings: ["Desarrollador de Software"],
         typeSpeed: 70,
         backSpeed: 55,
         backDelay: 1500,
@@ -119,10 +119,9 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-
 document.addEventListener('DOMContentLoaded', function () {
     var certificados = {
-        "buttonCertificadoUno": ["images/fullStackEgg.png"],
+        // "buttonCertificadoUno": ["images/fullStackEgg.png"], // Eliminado
         "buttonCertificadoDos": ["images/CertificadoArgPro1.png", "images/CertificadoArgPro2.png"],
         "buttonCertificadoTres": ["images/CertificadoCaC.png"],
         "buttonCertificadoCuatro": ["images/CertificadoUdemy.jpg"]
@@ -130,30 +129,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var contenedorFlotante = crearContenedorFlotante("contenedorFlotante", []);
 
-    var certificadoButtonUno = document.getElementById("buttonCertificadoUno");
     var certificadoButtonDos = document.getElementById("buttonCertificadoDos");
     var certificadoButtonTres = document.getElementById("buttonCertificadoTres");
     var certificadoButtonCuatro = document.getElementById("buttonCertificadoCuatro");
 
-    certificadoButtonUno.addEventListener("click", function (e) {
-        e.preventDefault();
-        mostrarContenedorFlotante(contenedorFlotante, certificados["buttonCertificadoUno"]);
-    });
-
-    certificadoButtonDos.addEventListener("click", function (e) {
-        e.preventDefault();
-        mostrarContenedorFlotante(contenedorFlotante, certificados["buttonCertificadoDos"]);
-    });
-
-    certificadoButtonTres.addEventListener("click", function (e) {
-        e.preventDefault();
-        mostrarContenedorFlotante(contenedorFlotante, certificados["buttonCertificadoTres"]);
-    });
-
-    certificadoButtonCuatro.addEventListener("click", function (e) {
-        e.preventDefault();
-        mostrarContenedorFlotante(contenedorFlotante, certificados["buttonCertificadoCuatro"]);
-    });
+    if (certificadoButtonDos) {
+        certificadoButtonDos.addEventListener("click", function (e) {
+            e.preventDefault();
+            mostrarContenedorFlotante(contenedorFlotante, certificados["buttonCertificadoDos"]);
+        });
+    }
+    if (certificadoButtonTres) {
+        certificadoButtonTres.addEventListener("click", function (e) {
+            e.preventDefault();
+            mostrarContenedorFlotante(contenedorFlotante, certificados["buttonCertificadoTres"]);
+        });
+    }
+    if (certificadoButtonCuatro) {
+        certificadoButtonCuatro.addEventListener("click", function (e) {
+            e.preventDefault();
+            mostrarContenedorFlotante(contenedorFlotante, certificados["buttonCertificadoCuatro"]);
+        });
+    }
 });
 
 function crearContenedorFlotante(id, imagenes) {
