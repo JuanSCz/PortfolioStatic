@@ -530,8 +530,7 @@ body.swal2-shown {
     color: #ffc107;
 }
 
-.card-estudios-modern .buttonCertificado:hover,
-.card-estudios-modern .buttonCertificado:focus {
+.card-estudios-modern .buttonCertificado:hover {
     background: var(--main-color, #007ced);
     color: #fff;
     box-shadow: 0 4px 16px rgba(0, 124, 237, 0.18);

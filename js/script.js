@@ -19,11 +19,11 @@ document.addEventListener('DOMContentLoaded', function () {
                         title: 'swal2-title-portfolio',
                         confirmButton: 'swal2-confirm-portfolio'
                     },
+                    showClass: {
+                        popup: 'animate__animated animate__fadeInDown'
+                    },
                     hideClass: {
                         popup: 'animate__animated animate__fadeOutUp'
-                    },
-                    didClose: function () {
-                        buttonCertificadoUno.blur();
                     }
                 });
             });
@@ -46,6 +46,9 @@ document.addEventListener('DOMContentLoaded', function () {
                     popup: 'swal2-portfolio',
                     title: 'swal2-title-portfolio',
                     confirmButton: 'swal2-confirm-portfolio'
+                },
+                showClass: {
+                    popup: 'animate__animated animate__fadeInDown'
                 },
                 hideClass: {
                     popup: 'animate__animated animate__fadeOutUp'
