@@ -410,8 +410,7 @@ body.swal2-shown {
     min-height: 420px;
 }
 
-.card-estudios-modern:hover,
-.card-estudios-modern:focus-within {
+.card-estudios-modern:hover {
     transform: translateY(-8px) scale(1.025);
     box-shadow: 0 0 0 6px var(--main-color-alpha, #007ced22), 0 4px 16px 0 rgba(0, 124, 237, 0.13), 0 2px 8px 0 rgba(0, 0, 0, 0.10) !important;
     outline: 2px solid var(--main-color, #007ced) !important;
