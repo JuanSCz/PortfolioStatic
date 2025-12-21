@@ -104,7 +104,7 @@ body.swal2-shown {
 
 .swal2-portfolio {
     border-radius: 1.5em !important;
-    box-shadow: 0 8px 32px rgba(0, 124, 237, 0.22) !important;
+    box-shadow: 0 0 48px 16px #007ced44, 0 8px 32px #007ced22 !important;
     padding: 2em 1.5em !important;
 }
 

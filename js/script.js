@@ -1,4 +1,33 @@
 document.addEventListener('DOMContentLoaded', function () {
+        // Alerta para botón Documentación de Analista de Sistemas (ORT Argentina)
+        var buttonCertificadoUno = document.getElementById('buttonCertificadoUno');
+        if (buttonCertificadoUno) {
+            buttonCertificadoUno.setAttribute('title', 'Actualmente cursando la carrera');
+            buttonCertificadoUno.style.cursor = 'pointer';
+            buttonCertificadoUno.addEventListener('click', function (e) {
+                e.preventDefault();
+                Swal.fire({
+                    icon: 'info',
+                    title: 'Carrera en curso',
+                    text: 'Actualmente me encuentro cursando la carrera de Analista de Sistemas en ORT Argentina. La documentación estará disponible una vez finalizada.',
+                    background: '#181b22',
+                    color: '#eaf6ff',
+                    confirmButtonColor: '#007ced',
+                    confirmButtonText: 'Cerrar',
+                    customClass: {
+                        popup: 'swal2-portfolio',
+                        title: 'swal2-title-portfolio',
+                        confirmButton: 'swal2-confirm-portfolio'
+                    },
+                    showClass: {
+                        popup: 'animate__animated animate__fadeInDown'
+                    },
+                    hideClass: {
+                        popup: 'animate__animated animate__fadeOutUp'
+                    }
+                });
+            });
+        }
     var buttonCV = document.getElementById('buttonCV');
     if (buttonCV) {
         buttonCV.setAttribute('title', 'Funcionalidad desactivada');
