@@ -106,7 +106,7 @@ menu.addEventListener('keydown', function (e) {
 
 document.addEventListener('DOMContentLoaded', function () {
     const typed = new Typed("#typed-output", {
-        strings: ["Desarrollador de Software"],
+        strings: ["Desarrollo de Software"],
         typeSpeed: 70,
         backSpeed: 55,
         backDelay: 1500,
